@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icon/title.png">
+     <!---------- BOOTSRAPT CSS ---------->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+     <!--========== BOX ICONS ==========-->
+     <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'> 
+     <!---------- CSS ---------->
+  <link rel="stylesheet" href="css/style.css">
+  <title>Kampus Indonesia</title>
+</head>
+<body class="body-container" id="blur">
+    <!-----------------SCROLL TOP--------->
+    <a href="#" class="scrolltop" id="scroll-top">
+      <i class='bx bx-chevron-up scrolltop__icon'></i>
+    </a>
+  <!-----------HEADER------------->
+  <header class="l-header" id="header">
+    <nav class="nav bd-container">
+      <a href="#" class="nav-logo"><img src="assets/image/logo.png" alt=""></a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active-link">Beranda</a></li>
+          <li class="nav-item"><a href="#fitur" class="nav-link">Fitur</a></li>
+          <li class="nav-item"><a href="#artikel" class="nav-link">Blog</a></li>
+          <li class="nav-item"><a href="#contactme" class="nav-link">Hubungi Kami</a></li>
+          <li class="nav-item"><a href="#" class="nav-link daftar" onclick="login();">Login</a></li>
+        </ul>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <i class="bx bx-menu"></i>
+      </div>
+    </nav>
+  </header>
+  <!-------HOME-------->
+  <section class="home" id="home">
+    <div class="jumbotron">
+    <div class="main-carousel" data-flickity='{"wrapAround" : true, "autoPlay": false, "pageDots":false}'>
+      <div class="carousel-cell">
+        <img class="img-background" src="assets/image/background1.jpg" alt="">
+      </div>
+      <div class="carousel-cell">
+        <img class="img-background" src="assets/image/background2.jpg" alt="">
+      </div>
+      <div class="carousel-cell">
+        <img class="img-background" src="assets/image/background3.jpg" alt="">
+      </div>
+      </div>
+    </div>
+  </section>
+  <!-------FITUR-------->
+  <section class="fitur" id="fitur">
+    <div class="jumbotron">
+      <div class="fitur-item">
+        <div class="row">
+          <div class="col-sm-2">
+            <img class="fitur-img" src="assets/icon/beasiswa.png" alt="">
+            <h5 class="fitur-title">Beasiswa</h5>
+          </div>
+          <div class="col-sm-2">
+            <img class="fitur-img" src="assets/icon/kampus.png" alt="">
+            <h5 class="fitur-title">Kampus</h5>
+          </div>
+          <div class="col-sm-2">
+            <img class="fitur-img" src="assets/icon/lomba.png" alt="">
+            <h5 class="fitur-title">Lomba</h5>
+          </div>
+          <div class="col-sm-2">
+            <img class="fitur-img" src="assets/icon/lowongan.png" alt="">
+            <h5 class="fitur-title">Lowongan</h5>
+          </div>    
+          <div class="col-sm-2">
+            <img class="fitur-img" src="assets/icon/utbk.png" alt="">
+            <h5 class="fitur-title">UTBK</h5>
+          </div>
+          <div class="col-sm-2">
+            <img class="fitur-img" src="assets/icon/workshop.png" alt="">
+            <h5 class="fitur-title">Workshop</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- --------kampus ------------->
+  <section class="kampus" id="kampus">
+    <div class="container-tittle">
+      <h1>Kampus Populer</h1>
+    </div>
+    <div class="container-kampus">
+        <div class="card-kampus">
+          <div class="imgBx">
+            <img src="assets/image/ui.jpg">
+          </div>
+          <div class="content-kampus">
+            <h2>Universitas Indonesia</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Explicabo architecto eaque voluptatem porro, 
+              minima nam ad! Deleniti ipsum reprehenderit nemo, 
+              rem ut corrupti veniam non, odit itaque at rerum sunt?</p>
+              <a class="btn-kampus" href="#"><button>Lihat Detail</button></a>
+          </div>
+        </div>
+        <div class="card-kampus">
+          <div class="imgBx">
+            <img src="assets/image/itb.jpg">
+          </div>
+          <div class="content-kampus">
+            <h2>Institut Teknologi Bandung</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Explicabo architecto eaque voluptatem porro, 
+              minima nam ad! Deleniti ipsum reprehenderit nemo, 
+              rem ut corrupti veniam non, odit itaque at rerum sunt?</p>
+              <a class="btn-kampus" href="#"><button>Lihat Detail</button></a>
+          </div>
+        </div>
+        <div class="card-kampus">
+          <div class="imgBx">
+            <img src="assets/image/ugm.jpg">
+          </div>
+          <div class="content-kampus">
+            <h2>Universitas Gajah Mada</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+              Explicabo architecto eaque voluptatem porro, 
+              minima nam ad! Deleniti ipsum reprehenderit nemo, 
+              rem ut corrupti veniam non, odit itaque at rerum sunt?</p>
+            <a class="btn-kampus" href="#"><button>Lihat Detail</button></a>
+          </div>
+        </div>
+    </div>
+    <div class="container-tittle">
+      <a class="btn-kampuslainnya" href="#"><button>Lihat Kampus Lainnya</i></button></a>
+    </div>
+  </section>
+   <!--------------- Artikel--------------->
+  <section class="artikel" id="artikel">
+    <div class="container-tittle">
+      <h1>Kampus Update</h1>
+    </div>
+    <div class="container-artikel">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card-artikel">
+            <div class="post-image">
+              <img src="assets/image/news1.jpg" class="img-responsive">
+            </div>
+            <div class="news-content">
+              <span class="category">Journal</span>
+              <div class="post-meta">
+                <span class="author">
+                  <a href="#">
+                    <i class="fa fa-user" aria-hidden="true">Someone Famous</i>
+                  </a>
+                </span>
+                <span class="time">
+                  <a href="#">
+                    <i class="fa fa-clock-o" aria-hidden="true">Jan 7, 2021</i>
+                  </a>
+                </span>
+                <span class="comments pull-right">
+                  <a href="#">
+                    <i class="fa fa-commething-o" aria-hidden="true">24</i>
+                  </a>
+                </span>
+                <div class="clearfix"></div>
+              </div>
+              <h2 class="post-header">Tips Mencari Referensi</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sed quibusdam veniam sequi necessitatibus, omnis magni. Tenetur 
+                corporis quisquam laborum, ratione atque repudiandae repellendus</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card-artikel">
+            <div class="post-image">
+              <img src="assets/image/news2.jpg" class="img-responsive">
+            </div>
+            <div class="news-content">
+              <span class="category">Education</span>
+              <div class="post-meta">
+                <span class="author">
+                  <a href="#">
+                    <i class="fa fa-user" aria-hidden="true">Someone Famous</i>
+                  </a>
+                </span>
+                <span class="time">
+                  <a href="#">
+                    <i class="fa fa-clock-o" aria-hidden="true">Jan 7, 2021</i>
+                  </a>
+                </span>
+                <span class="comments pull-right">
+                  <a href="#">
+                    <i class="fa fa-commething-o" aria-hidden="true">24</i>
+                  </a>
+                </span>
+                <div class="clearfix"></div>
+              </div>
+              <h2 class="post-header">3 Pronsip Dari Maudy Ayunda Agar Konsisten Mengejar Mimpi</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sed quibusdam veniam sequi necessitatibus, omnis magni. Tenetur 
+                corporis quisquam laborum, ratione atque repudiandae repellendus</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card-artikel">
+            <div class="post-image">
+              <img src="assets/image/news3.jpg" class="img-responsive">
+            </div>
+            <div class="news-content">
+              <span class="category">Dream</span>
+              <div class="post-meta">
+                <span class="author">
+                  <a href="#">
+                    <i class="fa fa-user" aria-hidden="true">Someone Famous</i>
+                  </a>
+                </span>
+                <span class="time">
+                  <a href="#">
+                    <i class="fa fa-clock-o" aria-hidden="true">Jan 7, 2021</i>
+                  </a>
+                </span>
+                <span class="comments pull-right">
+                  <a href="#">
+                    <i class="fa fa-commething-o" aria-hidden="true">24</i>
+                  </a>
+                </span>
+                <div class="clearfix"></div>
+              </div>
+              <h2 class="post-header">Agar Konsisten Mengejar Mimpi</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sed quibusdam veniam sequi necessitatibus, omnis magni. Tenetur 
+                corporis quisquam laborum, ratione atque repudiandae repellendus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-tittle">
+      <a class="btn-kampuslainnya" href="#"><button>Lihat Artikel Lainnya</i></button></a>
+    </div>
+  </section>
+
+  <section class="contactme" id="contactme">
+    <div class="container-contactme bd-grid bd-container">
+      <div class="contact-data">
+        <span class="section-subtitle contact__initial">Ingin Tahu Segala Sesuatu Tentang Kami</span>
+        <h2 class="section-title contact__initial">Hubungi Kami</h2>
+        <p class="contact-description">Ikuti instagram Kampus Indonesia Untuk Mendapatkan Informasi Terupdate</p>
+      </div>
+        <div class="contact-button">
+          <a href="#"><i class="fa fa-instagram" aria-hidden="true"> Instagram</i></a>
+        </div>
+    </div>
+  </section>
+  <!--------------- Intersip --------------->
+  <section class="intership" id="intership">
+    <div class="card">
+      <div class="content-intership">
+        <h2 class="title">Intership Program Back !!</h2>
+        <p class="paragraf">Kampus Indonesia membuka Program Internship Kampus Indonesia Batch 5! Di sini kalian 
+          bisa mendapatkan pengalaman seru melalui Internship selama 3 bulan dan bisa mendapatkan pengalaman terkait dunia kerja!!!
+        </p>
+           <a class="read" href="#">Read More</a>
+      </div>
+      <img src="assets/image/women.png">
+    </div>
+  </section>
+
+
+  <!--------------- footer --------------->
+  <footer>
+      <div class="container-footer">
+        <div class="sec aboutus">
+          <h2>Tentang Kita</h2>
+          <p>Kami Merupakan Perusahaan dibidang informasi seputar dunia
+            perkuliahan yang bisa memberikan informasi secara
+            terupdate dan dapat dipercaya sepenuhnya.</p>
+            <ul class="sci">
+              <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li><a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+        <div class="sec quickLinks">
+          <h2>Link Cepat</h2>
+          <ul>
+            <li><a href="#">Tentang Kami</a></li>
+            <li><a href="#">Hubungi Kami</a></li>
+            <li><a href="#">Karir</a></li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Partner</a></li>
+          </ul>
+        </div>
+        <div class="sec contact">
+          <h2>Info Kontak</h2>
+          <ul class="info">
+            <li>
+              <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+              <span>Kec.Lokawaru<br>
+              Kota Malang, Jawa Timur<br>Indonesia</span>
+            </li>
+            <li>
+              <span><i class="fa fa-phone" aria-hidden="true"></i></span>
+              <p><a href="tel:0202020">021-3452-2885</a></p>
+            </li>
+            <li>
+              <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <P><a href="mailto:owowowowo.com">info@kampusindonesia.co.id</a></P>
+            </li>
+          </ul>
+        </div>
+    </div>  
+  </footer>
+  <div class="copyrightText">
+    <p>Copyrights 2021</p>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+   <!--========== SCROLL REVEAL ==========-->
+   <script src="https://unpkg.com/scrollreveal"></script>
+   <!--========== MAIN JS ==========-->
+   <script src="js/main.js"></script>
+</html>
